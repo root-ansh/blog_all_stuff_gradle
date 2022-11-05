@@ -47,7 +47,7 @@ These files are all connected and contribute to the start of code compilation pr
 3. After downloading, the `gradlew` will start the `gradle-wrapper.jar` which will further execute the `build.gradle` files present in our project(and the originally downloaded gradle software, from step 2) to compile the complete app into an executable `.AAR` file
    - more info on [gradle-wrapper.jar ](https://docs.gradle.org/current/userguide/gradle_wrapper.html)
 
-> ***Thus, to summarise,** the relation between `build.gradle files`, `gradle software` and `gradle-wrapper.jar` becomes similar to that of java files, JDK and Terminal : Terminal is where the commands like `javac file.java && java file` are written & java files contains the actual instructions needed to be executed and java files + jdk works together to generate an executable file that gets executed by processor*
+***Thus, to summarise,** the relation between `build.gradle files`, `gradle software` and `gradle-wrapper.jar` becomes similar to that of java files, JDK and Terminal : Terminal is where the commands like `javac file.java && java file` are written & java files contains the actual instructions needed to be executed and java files + jdk works together to generate an executable file that gets executed by processor*
 
 
 </details>
