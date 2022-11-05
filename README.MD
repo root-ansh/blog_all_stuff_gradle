@@ -110,7 +110,7 @@ These files are all connected and contribute to the start of code compilation pr
 </details>
 
 
-The common types of configurations are provided in the [next section](README2_GRADLE_ARCHS_PART1.md).
+The common types of configurations are provided in the [next section](README2_GRADLE_ARCHS.md).
 
 ----
 

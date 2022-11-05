@@ -68,5 +68,15 @@ I find it cool because i can instead write all the code as direct api lines inst
 </details>
 
 <details >
-<summary><h2> Approach 1 :  parent is everything </h2></summary>
+<summary><h2> Approach 2 :  parent is everything </h2></summary>
+
+This is relatively a less used layout where we don't keep even a single module and rather have the complete configuration inside just one `build.gradle` file. The main usage of root's build.gradle is to apply some common plugins before initialising modules, but if we do not wish to use modules, we can add the dependencies directly in the root's gradle.
+
+**checkout  [this project's build.gradle.kts file](/p2_all_in_root/build.gradle.kts) which is written in a similar manner**
+
+</details>
+
+<details open >
+<summary><h2> Approach 3 : 1 parent multi module </h2></summary>
+
 </details>
