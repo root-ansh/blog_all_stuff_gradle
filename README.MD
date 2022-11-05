@@ -62,7 +62,7 @@ These files are all connected and contribute to the start of code compilation pr
 - key-values defined here will be read by gradle and its plugins and will customise their execution behavior accordingly
 - this file is usually auto-read by the associated plugins when we initiate the build process, unlike local.properties or any other custom created properties file
 
-> **Note: Some common and useful properties are defined in the following [gradle.properties](p1_basic/gradle.properties) file. These can vastly improve your gradle speed and performance, so you definitely want to check this .**
+**Note: Some common and useful properties are defined in the following [gradle.properties](p1_basic/gradle.properties) file. These can vastly improve your gradle speed and performance, so you definitely want to check this .**
 
 
 > Note2 : `.properties` file is one of the many ways to provide customisation options to a gradle plugin that will modify its build/compilation process. others include:
