@@ -6,7 +6,7 @@
 <details open>
 
 <summary><h2>What is Gradle and why it is needed?</h2></summary>
-This [answer](https://stackoverflow.com/a/24828666/7500651) (and other answers on this question) explain the gradle perfectly. It is simply an advanced build tool for compiling java software.
+This [answer](https://stackoverflow.com/a/24828666/7500651) (and other answers on this question) explain the gradle perfectly. It is simply an advanced build tool for compiling java software. more features can be seen [here](https://medium.com/@shivam.gosavi340_58315/gradle-101-introduction-1d83c0394942)
 
 </details>
 
@@ -57,6 +57,8 @@ These files are all connected and contribute to the start of code compilation pr
 <details open>
 
 <summary><h3>2. `gradle.properties file`</h3></summary>
+
+> update: before reading this section and next(local properties) section, you might also want to read [this article](https://medium.com/@shivam.gosavi340_58315/gradle-102-gradle-basics-798db70a6c20) which focuses on actual terminologies and how it is used for project/system initialisation.  personally, i like to see code first, understand it, then understand the meaning and then rewrite-everything to make it a summary, but that's just me. I will be updating this article with the info from above article in sometime later
 
 - this is a [.properties](https://en.wikipedia.org/wiki/.properties) file that is used by gradle build tool for configuring projects and plugins(i.e., during step 3 )
 - key-values defined here will be read by gradle and its plugins and will customise their execution behavior accordingly
