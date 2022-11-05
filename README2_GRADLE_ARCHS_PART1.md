@@ -58,12 +58,12 @@ new versions of Android Studio generated the similar 1 parent 1 child architectu
 **You can check the 3 gradle files from  [p1_new](/p1_new/) for the newer configuration.**
 
 <u><i>Note 1: Gradle not only  understands groovy but kotlin too!</i></u>.  
-you can simply rename your `build.gradle` file to `build.gradle.kts` , use `"` instead of `'` for strings and make some other small modifications, and you can have a perfect android project using 0 `.gradle` files!. 
+you can simply rename your `build.gradle` file to `build.gradle.kts` , use `"` instead of `'` for strings and make some other [small modifications](https://docs.gradle.org/current/userguide/migrating_from_groovy_to_kotlin_dsl.html), and you can have a perfect android project using 0 `.gradle` files!. 
 **the [p1_new](/p1_new/) project has all the gradle files in kotlin**
 
 <u><i>Note2: Where there's kotlin, there's the Higher order functions!</i></u>.  
 The groovy language also uses [groovy scopes](https://www.baeldung.com/groovy/variable-scope) to declare the various properties. in kotlin, this is similar to using a higher order function like `with(x){..}` or `x.run{...}` where all the properties and methods of `x` will be accessible inside the block like `this.abc()`, where `this` is also optional.
-I find it cool because i can instead write all the code as direct api lines instead of writingthe blocks which i find more understandable. **checkout the [app's gradle file](/p1_new/app/build.gradle) which is written in a similar manner**
+I find it cool because i can instead write all the code as direct api lines instead of writing the blocks which i find more understandable. **checkout the [app's gradle file](/p1_new/app/build.gradle.kts) which is written in a similar manner**
 
 </details>
 
