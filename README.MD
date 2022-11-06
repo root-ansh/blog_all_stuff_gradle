@@ -125,6 +125,7 @@ misc:
 7. [ ] refresh versions
 8. [ ] various android/gradle plugin blocks
 9. [ ] gradle project level plugins vs module level plugins vs dependencies
+10. gradle community for all the doubts/discussions :https://discuss.gradle.org/t/introducing-gradle-community-slack/26731
 
 
 
