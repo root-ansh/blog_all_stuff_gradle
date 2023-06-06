@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btIFG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="install in fg"/>
+
+
+    <Button
+        android:id="@+id/btIBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="install in bg"/>
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"/>
+
+
+    <Button
+        android:id="@+id/btChecksession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check if session going on"/>
+
+
+    <Button
+        android:id="@+id/btLaunchDFSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="launch settings df"/>
+
+
+    <Button
+        android:id="@+id/btLaunchDFIHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="launch help dfi"/>
+
+
+
+</LinearLayout>

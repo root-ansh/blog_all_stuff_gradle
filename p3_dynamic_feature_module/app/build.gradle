@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'work.curioustools.tdfm'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "work.curioustools.tdfm"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            //todo : add keystore.jks, keystore_creds.properties from  https://github.com/root-ansh/android_common_keystore
+            def props = new Properties()
+            def fileInputStream = new FileInputStream(file("${project.rootDir}/a_secure/keystore_creds.properties"))
+            props.load(fileInputStream)
+            fileInputStream.close()
+
+            def keyStorePath = "${project.rootDir}/a_secure/keystore.jks"
+            def keyStorePWD = props["STORE_PASSWORD"]
+            def key = props["KEY_ALIAS"]
+            def keyPWD = props["KEY_PASSWORD"]
+
+            println "keyStorePath: ${keyStorePath}"
+            println "keyStorePWD: ${keyStorePWD}"
+            println "key: ${key}"
+            println "keyPWD: ${keyPWD}"
+
+            storeFile file(keyStorePath)
+            storePassword keyStorePWD
+            keyAlias key
+            keyPassword keyPWD
+
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dynamicFeatures = [':df_setting', ':dfi_help']
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "com.google.android.play:core:1.10.3"
+}

@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/*">
+    <string name="app_name">testing dynamic feature module</string>
+    <string name="title_df_setting">df health</string>
+    <string name="title_dfi_help">dfi_help</string>
+</resources>
