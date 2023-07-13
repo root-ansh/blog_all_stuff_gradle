@@ -42,6 +42,7 @@ android {
     kotlinOptions {
         jvmTarget = compileOptions.sourceCompatibility.toString()
     }
+    buildFeatures.viewBinding = true
 
 }
 
@@ -54,6 +55,6 @@ dependencies {
     testImplementation( Testing.junit4)
     androidTestImplementation (AndroidX.test.ext.junit)
     androidTestImplementation( AndroidX.test.espresso.core)
-    implementation ("com.applandeo:material-calendar-view:_")
+    //implementation ("com.applandeo:material-calendar-view:_")
 
 }
